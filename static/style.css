@@ -1,0 +1,84 @@
+/* Style for the body to ensure the page centers the content and prevents overflow */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Make sure the body takes up the full viewport height */
+  overflow: hidden; /* Prevent unwanted body-level scrolling */
+}
+
+/* The container that holds all the content */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  width: 80%; /* Limit width for readability */
+  max-width: 800px; /* Maximum width of the content container */
+  max-height: 90vh; /* Limit the height to 90% of the viewport */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+/* Heading styles for the page */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 100%; /* Full width for the input */
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the search button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change button color when hovered */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Section to display the results */
+.results-section {
+  margin-top: 30px;
+  max-height: 50vh; /* Limit the height to half the viewport */
+  overflow-y: auto; /* Allow vertical scrolling within the results section */
+  border: 1px solid #ccc; /* Optional: visually separate the results section */
+  padding: 10px; /* Padding inside the results section for spacing */
+}
+
+/* Container for the dynamically inserted search results (documents) */
+#documents {
+  margin-bottom: 30px;
+}
+
+/* Individual document result styling */
+.document {
+  background-color: #f9f9f9; /* Light background for document */
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid #007bff; /* Left border for a visual cue */
+}
+
+/* Section for the chart (cosine similarity) */
+#chart-section {
+  margin-top: 30px;
+  max-height: 30vh; /* Limit the height of the chart section */
+  overflow-y: auto; /* Enable scrolling if the chart content overflows */
+}
+

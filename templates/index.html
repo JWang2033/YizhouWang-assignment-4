@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSA Search Engine</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Latent Semantic Analysis (LSA) Search Engine</h1>
+
+        <!-- Input Field for Query -->
+        <input type="text" id="query" placeholder="Enter your search query...">
+        <button id="search-button" onclick="performSearch()">Search</button>
+
+        <!-- Section to Display Results -->
+        <div id="results" class="results-section">
+            <h2>Search Results:</h2>
+            <div id="documents">
+                <!-- Results will be inserted here dynamically by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Section to Display Cosine Similarity Chart -->
+        <div id="chart-section">
+            <h2>Cosine Similarity Scores:</h2>
+            <div id="cosineChart"></div> <!-- Placeholder for Plotly chart -->
+        </div>
+    </div>
+
+    <!-- Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Custom JavaScript for interactivity -->
+    <script src="/static/main.js"></script> <!-- Link to the main.js script -->
+</body>
+</html>
